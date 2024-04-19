@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>6. bus_fare_calculator</title>
+</head>
+<body>
+    <h1>Making decisions in your code — conditionals</h1>
+    <script>
+        /***
+
+Ticket fare Calculator
+    - Children (age < 10): free
+    - Students get a 50% discount
+    - Senior citizens (age >= 60) gets a 15% Discount
+    - Otherwise Regular ticket fare 800 tk
+*/
+
+      
+     const age = 10;
+    
+    // under age at 10 discount 100%
+     if(age >= 10){
+        // under age at 10 discount 100%
+        const underAgeDiscount = 800 * 100 / 100;
+        const seatRent = 800 - underAgeDiscount;
+        console.log('under age at 10, discount' , underAgeDiscount , 'taka');
+        console.log('under age at 10, Bus Vara' , seatRent ,'taka , means vara free')
+     }  
+     else if(age < 15){
+        // student get a 50% discount
+        const studentDiscount = 800 * 50 / 100;
+        const seatRent1 = 800 - studentDiscount;
+        console.log('Student Discount' , studentDiscount , 'taka');
+        console.log('student Bus vara' , seatRent1 , 'taka')
+     }
+     else if(age <= 60){
+        // Senior citizens gets a 15% Discount
+        const seniorCitizensDiscount = 800 * 15 / 100;
+        const seatRent2 = 800 - seniorCitizensDiscount;
+        console.log('Senior citizens' , seniorCitizensDiscount , 'taka');
+        console.log('Senior citizens Nus vara' , seatRent2 , 'taka')
+     }
+     else{
+        // Otherwise Regular ticket fare 800 tk
+        const seatRent3 = 800;
+        console.log('Regular ticket price' , seatRent3 , 'taka')
+     }
+
+
+     
+      // student get a 50% discount
+     if(age > 10){
+        // under age at 10 discount 100%
+        const underAgeDiscount = 800 * 100 / 100;
+        const seatRent = 800 - underAgeDiscount;
+        console.log('under age at 10, discount' , underAgeDiscount , 'taka');
+        console.log('under age at 10, Bus Vara' , seatRent ,'taka , means vara free')
+     }  
+     else if(age < 15){
+        // student get a 50% discount
+        const studentDiscount = 800 * 50 / 100;
+        const seatRent1 = 800 - studentDiscount;
+        console.log('Student Discount' , studentDiscount , 'taka');
+        console.log('student Bus vara' , seatRent1 , 'taka')
+     }
+     else if(age <= 60){
+        // Senior citizens gets a 15% Discount
+        const seniorCitizensDiscount = 800 * 15 / 100;
+        const seatRent2 = 800 - seniorCitizensDiscount;
+        console.log('Senior citizens' , seniorCitizensDiscount , 'taka');
+        console.log('Senior citizens Bus vara' , seatRent2 , 'taka')
+     }
+     else{
+        // Otherwise Regular ticket fare 800 tk
+        const seatRent3 = 800;
+        console.log('Regular ticket price' , seatRent3 , 'taka')
+     }
+
+
+
+     
+    // Senior citizens gets a 15% Discount
+      if(age > 10){
+        // under age at 10 discount 100%
+        const underAgeDiscount = 800 * 100 / 100;
+        const seatRent = 800 - underAgeDiscount;
+        console.log('under age at 10, discount' , underAgeDiscount , 'taka');
+        console.log('under age at 10, Bus Vara' , seatRent ,'taka , means vara free')
+     }  
+     else if(age > 15){
+        // student get a 50% discount
+        const studentDiscount = 800 * 50 / 100;
+        const seatRent1 = 800 - studentDiscount;
+        console.log('Student Discount' , studentDiscount , 'taka');
+        console.log('student Bus vara' , seatRent1 , 'taka')
+     }
+     else if(age <= 60){
+        // Senior citizens gets a 15% Discount
+        const seniorCitizensDiscount = 800 * 15 / 100;
+        const seatRent2 = 800 - seniorCitizensDiscount;
+        console.log('Senior citizens Discount' , seniorCitizensDiscount , 'taka');
+        console.log('Senior citizens Bus vara' , seatRent2 , 'taka')
+     }
+     else{
+        // Otherwise Regular ticket fare 800 tk
+        const seatRent3 = 800;
+        console.log('Regular ticket price' , seatRent3 , 'taka')
+     }
+
+
+
+     
+   // Otherwise Regular ticket fare 800 tk
+    if(age > 10){
+        // under age at 10 discount 100%
+        const underAgeDiscount = 800 * 100 / 100;
+        const seatRent = 800 - underAgeDiscount;
+        console.log('under age at 10, discount' , underAgeDiscount , 'taka');
+        console.log('under age at 10, Bus Vara' , seatRent ,'taka , means vara free')
+     }  
+     else if(age > 15){
+        // student get a 50% discount
+        const studentDiscount = 800 * 50 / 100;
+        const seatRent1 = 800 - studentDiscount;
+        console.log('Student Discount' , studentDiscount , 'taka');
+        console.log('student Bus vara' , seatRent1 , 'taka')
+     }
+     else if(age >= 60){
+        // Senior citizens gets a 15% Discount
+        const seniorCitizensDiscount = 800 * 15 / 100;
+        const seatRent2 = 800 - seniorCitizensDiscount;
+        console.log('Senior citizens Discount' , seniorCitizensDiscount , 'taka');
+        console.log('Senior citizens Bus vara' , seatRent2 , 'taka')
+     }
+     else{
+        // Otherwise Regular ticket fare 800 tk
+        const seatRent3 = 800;
+        console.log('Regular ticket price' , seatRent3 , 'taka')
+     }
+
+
+
+
+    </script>
+</body>
+</html>

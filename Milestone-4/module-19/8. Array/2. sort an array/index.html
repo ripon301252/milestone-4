@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sort an array</title>
+</head>
+<body>
+    <script>
+        const persons = ['akib', 'nokib', 'sakib', 'rakib', 'dakib', 'anis', 'norin', 'sakil', 'dabib', 'rasel'];
+        console.log(persons);
+        const sortedPersons = persons.sort();
+        console.log(sortedPersons);
+
+
+        // sort -->
+        
+        /*
+        Ascending ----> smaller to lerger : [1, 2, 3, 4, 5, 6, 7, 8, 9]
+        Decending ----> lerger to smaller : [9, 8, 7, 6, 5, 4, 3, 2, 1]
+        */
+        const numbers1 = [2, 4, 3, 5, 8, 7, 6, 1, 9,];
+        numbers1.sort();
+        console.log(numbers1);
+        
+
+        const numbers2 = [2, 4, 13, 5, 8, 7, 6, 41, 9,];
+        numbers2.sort(function(a, b) { return a - b }); //  Ascending
+        console.log(numbers2);
+        numbers2.sort(function(a, b) { return b - a }); //  Decending
+        console.log(numbers2);
+
+
+
+
+
+    </script>
+</body>
+</html>

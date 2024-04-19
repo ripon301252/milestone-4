@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>String</title>
+</head>
+<body>
+    <script>
+        //string
+        const country = 'Bangladesh';
+        const division = "Newkhali";
+        const district = `B-Baria`; // Backtick
+        const thana = new String('Demra');
+
+        console.log(typeof country);
+        console.log(typeof division);
+        console.log(typeof district);
+        console.log(typeof thana);
+        console.log(thana);
+
+
+        // array is mutable --> I can changeable array element.
+        const numbers = [54, 56, 66, 63, 36];
+        console.log(numbers);
+        console.log(numbers.length);
+        console.log(numbers[2]);
+
+
+       
+       
+        // string is immutable --> not changeable
+        const capital = 'Dh aka';
+        console.log(capital.length);
+        console.log(capital[0]);
+        capital[0] = 'F';
+        console.log(capital);
+
+        //------------------------------------------------
+        // toLowerCase or toUpperCase 
+        const school = 'RAJ UK UTTARA MODEL SCHOOL';
+        console.log(school);
+        console.log(school.toLowerCase());
+        console.log(school.toUpperCase());
+
+
+        //--------------------------------------------
+        // toLowerCase or toUpperCase
+        const subject = 'Chemistry';
+        const book = 'ChemisTry';
+
+        if(subject === book){
+            console.log('I am reading the chemistry');
+        }
+        else{
+            console.log('No Read');
+        }
+
+
+        if(subject.toLowerCase() === book.toLowerCase()){
+            console.log('I am reading the chemistry');
+        }
+        else{
+            console.log('No Read');
+        }
+
+
+        if(subject.toUpperCase() === book.toUpperCase()){
+            console.log('I am reading the chemistry');
+        }
+        else{
+            console.log('No Read')
+        }
+
+
+        //-----------------------------------------------
+        // trim
+        const drink = 'water';
+        const liquid = '  water  ';
+        if(drink === liquid){
+            console.log('Pani er opor naam life');
+        }
+        else{
+            console.log('sagorer panl lobonakto');
+        }
+
+        // trim
+        if(drink.trim() === liquid.trim()){
+            console.log('Pani er opor naam life');
+        }
+        else{
+            console.log('sagorer panl lobonakto');
+        }
+
+
+        //------------------------------------------------
+        // slice
+        const address = 'chandpur';
+        const part1 = address.slice(0,5);
+        const part2 = address.slice(5.8);
+        console.log(part1, part2);
+
+
+
+        //split
+        const sentence = 'I am a good and hardworking person';
+        console.log(sentence.split());
+        console.log(sentence.split(''));
+        console.log(sentence.split(' '));
+        console.log(sentence.split('a'));
+
+        const friendsStr = 'Arrahman,Rahim,Malik,Kuddus,Salam,Muhaimen,Aziz';
+        console.log(friendsStr);
+        const friends = friendsStr.split(',');
+        console.log(friends);
+
+        const realFried = ['Arrahman', 'Rahim', 'Malik', 'Kuddus', 'Salam', 'Muhaimen', 'Aziz'];
+        console.log(realFried);
+        console.log(realFried.join());
+        console.log(realFried.join('|'));
+        console.log(realFried.join('_'));
+        console.log(realFried.join('-'));
+
+
+        //concat
+        const first = 'Abid';
+        const last = 'Nabid';
+        const fullName = first + last;
+        const fullName1 = first + ' ' + last;
+        const fullName2 = first.concat(' ').concat(last);
+        console.log(fullName, fullName1, fullName2);
+
+
+        // includes
+        console.log(last.includes('d')); //true 
+        console.log(last.includes('x')); //false
+
+
+        // revers
+        const sentence1 = 'I am learning web dev';
+        for(const latter of sentence1){
+            console.log(latter);
+        }
+
+        // 1
+        let reverse = ''
+        const sentence2 = 'I am learning web dev.';
+        for(const latter2 of sentence2){
+            reverse = latter2 + reverse;
+        }
+        console.log(reverse);
+
+
+        // 2
+        let rev = ''
+        for(let i = 0; i < sentence2.length; i++){
+            //console.log(i);
+            //console.log(sentence2[i]);
+            const latter2 = sentence2[i];
+            rev = latter2 + rev;
+        }
+        console.log(rev);
+
+
+        // shortcut revers
+        const reversed = sentence2.split('');
+        console.log(reversed);
+
+        const reversed1 = sentence2.split('').reverse().join('');
+        console.log(reversed1);
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </script>
+</body>
+</html>

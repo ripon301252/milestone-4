@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array more</title>
+</head>
+<body>
+    <script>
+        const friends = ['Rana', 'Rakib', 'Roni', 'Raihan'];
+
+        for(const friend of friends){ // for of loop
+            //console.log(friend);
+        }
+
+        for(let i = 0; i <= 10; i++){ // for loop
+            //console.log(i);
+            //console.log(friends[i]);
+        }
+
+        for(let i = 0; i < friends.length; i++){ // for loop
+            //console.log(i);
+            //console.log(friends[i]);
+        }
+
+
+        let i = 0;
+        while(i < friends.length){ // while loop
+            //console.log(friends[i])
+            i++;
+        }
+
+
+        //const numbers = [5, 10, 15, 20, 25, 30, 35, 555, 666];
+        /*
+        for(const number of numbers){   // for of loop
+            //console.log(number)
+        }
+
+        */
+
+        /*
+
+        for(let i = 0; i < numbers.length; i++){ // for loop
+            //console.log(numbers[i]);
+        }
+
+        */
+
+        /*
+        let n = 0;
+        while(n < numbers.length){ // while loop
+            //console.log(numbers[n])
+            n++;
+        }
+        */
+
+
+
+        /* Reverse */
+        const prices = [1, 2, 3, 4, 5, 6, 7, 8, 9];
+        //console.log(prices);
+        //prices.reverse();
+        //console.log(prices);
+        //const reversed = prices.reverse();
+        //console.log(reversed);
+
+
+        //console.log(friends);
+        //friends.reverse();
+        //console.log(friends);
+
+
+        const rev_prices = [];
+        /* for of loop
+        for(const price of prices){
+            console.log(price);
+            rev_prices.push(price);
+        }
+        console.log(rev_prices);
+        */
+
+
+        /*
+        for(const price of prices){
+            console.log(price);
+            rev_prices.unshift(price);
+            console.log(rev_prices);
+        }
+        console.log(rev_prices);
+        */
+
+
+
+        for(let i = 0; i < prices.length; i++){
+            //const price = prices[i];
+            //rev_prices.unshift(price);
+        }
+        //console.log(rev_prices);
+
+
+        // decremental for loop
+        for(let i = prices.length -1; i >= 0; i--){
+            const price = prices[i];
+            //console.log(price);
+            rev_prices.push(price);
+        }
+        console.log(rev_prices);
+        
+
+       
+
+
+    </script>
+</body>
+</html>

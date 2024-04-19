@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+      // modul-17
+
+      var name = "Mahfuz";
+      console.log(name);
+
+
+     if(3 < 5){
+        console.log("I am a bigest");
+     }
+     else{
+      console.log("i have a smaller value")
+     }
+
+
+
+
+     if(3 > 5){
+        console.log("I am a bigest");
+     }
+     else{
+      console.log("i have a smaller value")
+     }
+
+   
+
+
+
+
+     const ticketPrice = 120;
+     if(ticketPrice > 250){
+        console.log("Give me a Ticket");
+     }
+     else{
+        console.log("Don't Give me a ticket")
+     }
+
+   
+
+
+
+     const mangoPrice = 250;
+     if(mangoPrice > 300){
+        console.log("mama 1 kg mango daw")
+        
+     }
+     else{
+            console.log("daam bashi mango nimu na")
+        }
+
+
+        const iLoveYou = 100
+        if(iLoveYou > 89){
+         console.log("ami tomak onek valobashi")
+        }
+        else{
+          console.log("i like U")
+        }
+
+
+
+
+//--------------------------------------------------------------------------------------
+const salary = 25000;
+const isBCS = true;
+const height = 61;
+const hasCar = false;
+//---------------------&& condition----------------------
+if(salary > 20000 && height > 66){
+   console.log("su---patro");
+}
+else{
+   console.log("onno patro khuji");
+}
+
+
+
+//-----------------|| (or) condition-------------------------
+if(salary > 26000 || height > 66){
+   console.log("esho baba kobul");
+}
+else{
+   console.log("vag tui mokbul");
+}
+
+
+
+
+//------------------- more and more condition------------------
+if(salary > 26000 || height > 66 || isBCS == true){
+  console.log("esho baba kobul");
+}
+else{
+   console.log("vag tui mokbul");
+}
+
+
+if(salary > 26000 && height > 66 && isBCS == true){
+   console.log("esho baba kobul");
+}
+else{
+   console.log("vag tui mokbul");
+}
+
+
+//----------COMPLEX CONDITION---------------
+if((salary > 26000 && hasCar == true) || (isBCS == true && height > 58)){
+   console.log("amar 14 gosti raji");
+}
+else{
+   console.log("Raji na")
+}
+
+
+if((salary > 26000 || hasCar == true) && (isBCS == true && height > 58)){
+   console.log("amar 14 gosti raji");
+}
+else{
+   console.log("Raji na")
+}
+
+
+
+//----------------Multi_Lavel_Condition----------------
+const price = 2000;
+
+if(price >= 5000){   
+   // 10% discount
+   const discount = price * 10 / 100;
+   const payAmount = price - discount;
+   console.log(discount, payAmount);
+}
+else if(price > 2500){
+   // 5% discount
+   const discount1 = price * 5 / 100;
+   const payAmount1 = price - discount1;
+   console.log(discount1, payAmount1);
+}
+else{
+   console.log(price);
+}
+//---------------------------
+const age = 17;
+const price1 = 500;
+
+if(age >= 18){
+   //console.log("You can eat for free");
+}
+else if(age >= 60){
+   // 50% discount
+   const discount2 = price1 * 50 / 100;
+   const payAmount2 = price1 - discount2;
+   //console.log(discount2, payAmount2);
+}
+else if(age >= 50){
+   // 25% discount
+   const discount4 = price1 * 25 / 100;
+   const payAmount4 = price1 - discount4;
+   //console.log(discount4, payAmount4);
+}
+else if(age >= 40){
+   // 10% discount
+   const discount3 = price1 * 10 / 100;
+   const payAmount3 = price1 - discount3;
+   //console.log(discount3, payAmount3);
+}
+else{
+   //console.log(price1);
+}
+
+
+//---------------nested if else----------------
+const money = 500;
+if(money < 300){
+   console.log("bro you are rich!!");
+}
+else{
+   if(money < 100){
+      //console.log("tui gorib o na borolok o na")
+   }
+   else{
+      if( money >= 600){
+         //console.log("dosto tui kola kha")
+      }
+      else{
+         //console.log("tui amar kase taka chabi na")
+      }
+   }
+}
+
+
+// -------------------ternary condition-------------------
+
+//      ?     :
+// condition ? do something when true : do something when fals
+
+const age2 = 20;
+/*
+if(age2 >= 18){
+   console.log("you can vote")
+}
+else{
+   console.log("ghumai thako")
+}
+*/
+
+// age2 >= 18 ? console.log("you can vote") : console.log("ghumai thako");
+
+
+let price2 = 500;
+const isLeader = true;
+/*
+if(isLeader === false){
+   price2 = 0;
+}
+else{
+   price2 = price2 + 100
+}
+//console.log(price2);
+*/
+price2 = isLeader === true ? 300 : price2 + 100;
+//console.log(price2);
+
+// optional: semi-advanced ternary
+if(isLeader === false){
+   if(price2 > 1000){
+      price2 = price2 /2;
+   }
+   else{
+      price2 = 0;
+   }
+}
+else{
+   price2 = price2 + 100;
+}
+//console.log(price2);
+//price2 > 1000 ? price2 /2 : 0
+//price2 = isLeader === true ? price2 > 1000 ? price2 /2 : 0 : price2 + 100
+price2 = isLeader === true ? 
+            price2 > 1000 ? 
+               price2 /2 : 0 
+               : price2 + 100;
+
+               //console.log(price2);
+
+
+//--------SHORTCUT CONDITION----------
+const isLeader2 = true;
+if(isLeader2){
+   //console.log("leader khub valo");
+}
+else{
+   //console.log("leader beshi shubidhar na")
+}
+
+
+const isPassed = true;
+if(isPassed){ // logical not  (!true returns false)
+   //console.log("This is true")
+}
+else{
+   //console.log("This is false")
+}
+
+
+if(!isPassed){ // logical not  (!false returns true)
+   //console.log('This is true');
+}
+else{
+   //console.log('This is false')
+}
+
+let isEnabled = true; // logical not  (!true returns false)
+isEnabled = !isEnabled;
+//console.log(isEnabled);
+
+let isEnable = false; // logical not  (!false returns true)
+isEnable = !isEnable;
+//console.log(isEnable);
+
+let inputValue = null;
+if(!inputValue){
+   //console.log('input valu is falsy')
+}
+//console.log(!inputValue);
+//console.log(inputValue);
+
+let userId = 10;
+console.log(userId)
+console.log(!userId)
+console.log(!!userId)
+
+
+
+const isCar = true;
+if (!isCar) {
+  console.log('block of code to be executed if the condition is true');
+} else {
+  console.log('block of code to be executed if the condition is false');  
+}
+
+
+
+
+  
+
+
+      
+      
+    </script>
+</body>
+</html>

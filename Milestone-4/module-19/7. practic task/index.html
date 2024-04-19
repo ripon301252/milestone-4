@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practic task</title>
+</head>
+<body>
+    <script>
+        // 1. Access the golden rod color value in output
+        const color = {
+            red: '#ff0000',
+            green: '#00ff00',
+            blue: '#0000ff',
+            'golden rod': '#daa520'
+        }
+        console.log(color['golden rod']);
+
+
+
+
+
+        // 2. for this object below add a property named passenger capacity with value 5
+        const car = {
+            make: 'Toyota',
+            model:'Corolla',
+            year: 2020,
+        }
+        console.log(car);
+        car.passengerCapacity = 5;
+        console.log(car);
+
+
+
+
+        //3. Display the physics marks as output
+        const student = {
+            name: 'Mahfuz',
+            id: 22009,
+            physics: {
+                subject: 'HSC Physics',
+                author: 'Mossarof Sir',
+                marks: 30
+            }
+        };
+        console.log(student.physics.marks);
+
+
+
+
+       
+        // 4. Count the number of properties.
+        let student1 = {
+            name:'Mahfuz',
+            age: 32,
+            city: 'Gazipur',
+            isStudent: false
+        }
+        const prop = Object.keys(student1);
+        console.log(prop);
+        console.log(prop.length);
+
+
+
+
+        // 5. (Hard) Loop through an object and print the key-value pairs with their types
+        let myObject = {
+            name: 'john Doe',
+            age: 25,
+            city: 'Example City',
+            isStudent: true
+        }
+
+        
+        const keys = Object.keys(myObject);
+        console.log(keys);
+        for(const key of keys){
+            console.log( 'key',':', key, '|', 'type', ':', );
+        }
+    
+        
+        
+       
+    </script>
+</body>
+</html>

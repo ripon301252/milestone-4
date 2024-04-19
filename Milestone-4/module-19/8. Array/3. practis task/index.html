@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practis Task</title>
+</head>
+<body>
+    <script>
+        // ---------Task 1---------------
+        // Write a JavaScript code to reverse the array colors without using the reverse method.
+
+        const colors = ['red', 'blue', 'green', 'yellow', 'orange'];
+        const rev_colors = [];
+        for(const color of colors){
+            //console.log(color);
+            rev_colors.unshift(color);
+        }
+        console.log(rev_colors);
+        // Output: ['orange', 'yellow', 'green', 'blue', 'red']
+
+
+
+        // -------Task 2-----------
+        //Write a JavaScript code to get the even numbers from an array using any looping technique.
+
+         const numbers = [12, 98, 5, 41, 23, 78, 46];
+         const num = numbers.slice(3, 4, 5)
+         console.log(num);
+         //Output:[12, 98, 78, 46]
+
+
+         // -----------Task 3-----------------
+         // Use a for...of loop to concatenate all the elements of an array into a single string.
+
+         var words = ['Tom', 'Tim', 'Tin', 'Tik']
+
+        // Output:'TomTimTinTik'
+
+
+
+
+        // ----------Task 4 (Hard)-------------
+        //Reverse the words of a sentence. Only the position of the word will be reversed. check out the output
+
+        const statement = 'I am a hard working person'
+
+        //Output:'person working hard a am I'
+
+
+    </script>
+</body>
+</html>

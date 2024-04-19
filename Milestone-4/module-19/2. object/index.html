@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>object</title>
+</head>
+<body>
+   
+    <script>
+        console.log('video-5 start .', 'object bujano hosse')
+        const age = 21;
+        const school = 'rifle square';
+        const isPassed = true;
+        let isDeveloper;        console.log(isDeveloper);
+        const subject = ['bangla', 'english', 'math', 'islamic'];
+
+        const bottleWrong =['white', 45];
+        const bottleColor = 'white';
+        const bottlePrice = 45;
+        const bottleDrinks = 'water';
+
+
+        // object
+        const bottle = {
+            brand: 'Apple',
+            price: 45,
+            color: 'white',
+            inClear: false
+        }
+
+        const subject1 = {
+            name: 'biology',
+            teacher: 'rasheda mam',
+            examDate: '30 Feb',
+            chapters: ['1st', '2nd', '3rd'],
+            exams:{
+                name:['1st exam', '2nd exam', 'final exam'],
+                marks: 100,
+            }
+        }
+
+
+
+
+        // video-6 start
+        console.log('video-6 start')
+        const person = {
+            name: 'Ripon',
+            age: 25,
+            profession:'developer',
+            salary: 25000,
+            married: true,
+            'fav places': ['bandarban', 'sainmartin', 'kuakata']
+        }
+
+      
+        // dot notation diye object property er value access kora
+        console.log(person);
+        console.log(person.profession); 
+        const income = person.salary;
+        console.log(income);
+
+
+        //3rd bracket diye access kora
+        console.log(person['age']);
+        const boyos = person['age'];
+        console.log(boyos);
+
+        //error
+        // console.log(person.'fav places');
+        console.log(person['fav places']);
+
+
+          // property value change dot & bracket
+          console.log(person);
+          person.salary = 'bonus 30000 tk only';
+          console.log(person);
+          person['age'] = 70;
+          console.log(person);
+
+          person['fav places'] = ['maldives', 'bali', 'pataya'];
+          //console.log(person['fav places']);
+          console.log(person);
+
+          const keyName = 'profession';
+          console.log(person['profession'])
+          console.log(person[keyName]);
+
+
+          const propName ='profession';
+          person[propName] = 'devops';
+          console.log(person)
+
+
+         // video-7 start
+         console.log('video-7 start')
+         // object er vitor keyword 
+         const computer = {
+            brand: 'Dell',
+            price: 35000,
+            processor: 'Intel core i 3',
+            genaration: '2nd',
+            sddCard: true,
+            rom:'500gb',
+            ram: '6gb'
+         }
+
+         //object er property
+         const keys = Object.keys(computer);
+         console.log(keys);
+
+         //object er values
+         const values = Object.values(computer);
+         console.log(values);
+
+
+
+
+
+
+
+
+
+
+    </script>
+</body>
+</html>

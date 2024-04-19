@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loop</title>
+</head>
+<body>
+    <script>
+        const mobile = {
+            brand: 'samsung',
+            price: 25000,
+            color: 'black',
+            camera: '12mp',
+            isNew: true
+        }
+
+        // for of : array
+        // for in : object
+        for(const prop in mobile){
+            console.log(prop);
+            console.log(mobile[prop]);
+        }
+
+        const keys = Object.keys(mobile);
+        console.log(keys);
+        for(const key of keys){
+            console.log(key, ':',  mobile[key]);
+        }
+
+    </script>
+</body>
+</html>
